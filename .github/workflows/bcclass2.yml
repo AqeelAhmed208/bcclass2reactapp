@@ -37,8 +37,8 @@ jobs:
     - name: Build React App 
       run: yarn build
     
-    - name: Install surge
-      run: npm install --golobal surge
+    - name: install surge
+      run: npm install -g surge
     
     - name: deploy to surge
       run: surge ./build bcclass2.surge.sh ${{ secrets.SURGE_TOKEN }}
