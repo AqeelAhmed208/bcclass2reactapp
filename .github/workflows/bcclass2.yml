@@ -34,11 +34,11 @@ jobs:
           # Yarn command
             cmd: install
 
-    - name: Creatng Build
+    - name: Build React App 
       run: yarn build
     
     - name: Installing surge
       run: npm install --golobal surge
     
-    - name: deploying on surge
+    - name: deploy to surge
       run: surge ./build bcclass2.surge.sh ${{ secrets.SURGE_TOKEN }}
