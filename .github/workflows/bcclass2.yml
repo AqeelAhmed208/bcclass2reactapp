@@ -24,7 +24,7 @@ jobs:
 
     # Runs a single command using the runners shell
     - name: Setup Node Js Enviorment
-      uses: action/setup-node@1.4.2
+      uses: action/setup-node@V2-beta
       with: 
             version: 12
     
