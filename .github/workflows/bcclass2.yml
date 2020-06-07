@@ -42,6 +42,3 @@ jobs:
     
     - name: deploying on surge
       run: surge ./build http://bcclass2.surge.sh/ --token ${{secrets.SURGE.TOKEN}}
-       
-        echo Add other actions to build,
-        echo test, and deploy your project.
